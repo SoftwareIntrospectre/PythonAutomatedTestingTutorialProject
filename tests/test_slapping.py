@@ -38,7 +38,7 @@ def test_divide_by_zero():
 def test_invalid_slap():
     with pytest.raises(ValueError):
         slap_many(LikeState.empty, 'x')
-
+ 
 @pytest.mark.xfail
 def test_db_slap(db_conn):
     db_conn.read_slaps()
